@@ -1,0 +1,241 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --ff: "Roboto", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  color: var(--dark-slate-grey);
+}
+
+p,
+ul {
+  color: var(--charcoal-grey);
+  font-size: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+form {
+  margin-top: 2em;
+}
+
+label {
+  color: var(--dark-slate-grey);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+}
+
+input,
+button {
+  cursor: pointer;
+  padding: 1.5em 2em;
+  border: none;
+  font-family: var(--ff);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  display: block;
+  width: 80%;
+}
+
+.mb-img {
+  width: 100%;
+}
+
+.container {
+  margin: 3em;
+  min-width: 503px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.item-txt {
+  width: 90%;
+}
+
+.list-icon {
+  margin-bottom: 0.9em;
+}
+
+.list-item {
+  width: 80%;
+}
+
+.email-input {
+  border: 2px solid var(--grey);
+  border-radius: 8px;
+  text-align: left;
+  font-weight: var(--fw-regular);
+  margin-top: 1em;
+}
+
+.btn {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  border-radius: 8px;
+  margin-top: 1.5em;
+  letter-spacing: 0.124em;
+  margin-bottom: 1.9em;
+  width: 90%;
+}
+
+.row + .row {
+  margin-top: 10px;
+}
+
+.dt-container {
+  display: none;
+}
+
+/*  success page */
+
+.success-container {
+  margin-top: 5em;
+  margin-bottom: 3.4em;
+  padding: 3em 3em 0 3em;
+}
+
+.success-txt {
+  line-height: 2.3rem;
+  max-width: 700px;
+}
+
+.usr-mail {
+  color: var(--dark-slate-grey);
+  font-weight: var(--fw-bold);
+}
+
+.btn-success {
+  margin-top: 15em;
+  width: 90%;
+}
+
+/* classes used for error message  
+render using javascript
+*/
+
+.form-email {
+  display: none;
+  margin: 0;
+}
+
+.msg-container {
+  font-size: 1rem;
+  color: var(--tomato);
+  margin-left: 60%;
+  position: relative;
+  top: 2em;
+}
+
+.err-placeholder::placeholder {
+  color: red;
+  border: 8px solid var(--tomato);
+}
+
+.error-message {
+  background-color: var(--tomato);
+  opacity: 0.7;
+}
+
+
+/* hover states */
+input:focus {
+  color: var(--charcoal-grey);
+  border: 2px solid var(--charcoal-grey);
+}
+
+.btn:hover {
+  background: var(--tomato);
+  box-shadow: 0 20px 20px 3px hsl(0, 64%, 84%);
+}
+
+/* media query for destop size */
+@media (min-width: 1200px) {
+  body {
+    background-color: var(--dark-slate-grey);
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .card {
+    background-color: var(--white);
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+
+  .dt-container {
+    display: block;
+  }
+
+  .dt-img {
+    height: 750px;
+  }
+
+  .list-item {
+    width: 90%;
+  }
+
+  .item-txt {
+    width: 92%;
+  }
+
+  .mb-container {
+    display: none;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  input {
+    font-size: 1.2rem;
+  }
+
+  /* success page */
+
+  .success-container {
+    width: 40%;
+    padding: 3.5em;
+  }
+
+  .success-title {
+    font-size: 5rem;
+  }
+
+  .btn {
+    width: 90%
+  }
+
+  .btn-success {
+    margin-top: 2em;
+    width: 90%;
+  }
+}

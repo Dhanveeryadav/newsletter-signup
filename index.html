@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="card">
+      <div class="mb-container">
+        <img
+          class="mb-img"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </div>
+      <div class="container row">
+        <div class="item">
+          <h1>Stay updated!</h1>
+          <p class="item-txt">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="list">
+            <div class="row">
+              <img
+                class="list-icon"
+                src="./assets/images/icon-list.svg"
+                alt=""
+              />
+              <li class="list-item">
+                Product discovery and building what matters
+              </li>
+            </div>
+            <div class="row">
+              <img
+                class="list-icon"
+                src="./assets/images/icon-list.svg"
+                alt=""
+              />
+
+              <li class="list-item">
+                Measuring to ensure updates are a success
+              </li>
+            </div>
+            <div class="row">
+              <img
+                class="list-icon"
+                src="./assets/images/icon-list.svg"
+                alt=""
+              />
+
+              <li class="list-item">And much more!</li>
+            </div>
+          </ul>
+
+          <form class="form" novalidate="true">
+            <p class="form-email"></p>
+            <label class="email" for="Email">Email address</label>
+            <input
+              class="email-input"
+              type="email"
+              name="email"
+              id="Email"
+              placeholder="email@company.com"
+            />
+            <button class="btn btn-subscibe" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <div class="dt-container">
+          <img
+            class="dt-img"
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
