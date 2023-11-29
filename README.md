@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Dhanveeryadav/newsletter-signup)
-- Live Site URL: [Live-site](https://your-live-site-url.com)
+- Live Site URL: [Live-site](https://chic-sable-66f919.netlify.app)
 
 ## My process
 
